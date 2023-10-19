@@ -152,4 +152,5 @@ line-height: calc(20/14);
 margin-bottom: 32px;
 }
 .hero-btn {
+border: none;
 }
