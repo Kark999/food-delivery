@@ -1,0 +1,134 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--Black, #2c2c2c);
+  font-size: 16px;
+  background: var(--White, #fefefe);
+}
+/* Стилі для обнулення верхніх відступів у елементів */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Клас для обнулення базових властивостей списків (ul) */
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Клас для обнулення базових властивостей у посилань */
+a {
+  text-decoration: none;
+}
+
+/* Властивості для коректного відображення картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Властивості для обнулення курсиву address */
+
+address {
+  font-style: normal;
+}
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 16px;
+  }
+}
+.header {
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  padding: 10px 0;
+}
+.nav {
+  display: none;
+}
+
+.header-btn {
+  display: none;
+}
+.mob-open-btn {
+  padding: 0;
+  line-height: 0;
+  border: none;
+  background-color: transparent;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
+  }
+
+  .header-container {
+    justify-content: unset;
+  }
+  .logo {
+    margin-right: auto;
+  }
+  .nav {
+    display: block;
+    margin-right: 30px;
+  }
+  .nav-list {
+    display: flex;
+    gap: 28px;
+  }
+
+  .nav-link {
+    color: #000;
+    font-size: 14px;
+    line-height: normal;
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #bbf330;
+    text-decoration: underline;
+  }
+  .header-btn {
+    display: block;
+    border-radius: 30px;
+    background: var(--Button-green, #bbf330);
+    color: var(--Black, #2c2c2c);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: pointer;
+    min-width: 98px;
+    height: 32px;
+    border: none;
+  }
+  .mob-open-btn {
+    display: none;
+  }
+  .mob-open-icon {
+  }
+}
